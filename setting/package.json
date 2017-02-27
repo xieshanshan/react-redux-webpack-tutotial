@@ -1,0 +1,14 @@
+{
+  "name": "setting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shan shan <Your email> (http://yourdomain.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.13.0"
+  }
+}
