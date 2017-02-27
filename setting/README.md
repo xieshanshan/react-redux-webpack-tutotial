@@ -10,8 +10,8 @@
 
     var hello = require('./hello.js');
     document.getElementById('root').appendChild(greeter());
-    
-  hello.js  -- 简单的返回包含问候信息的html元素函数 
+
+  >hello.js  -- 简单的返回包含问候信息的html元素函数 
    
     module.exports = function() {
       var hello = document.createElement('div');
@@ -38,14 +38,14 @@
   npm install webpack --save-dev
   
 ##### 根目录创建webpack.config.js文件 ， 关于一些配置
-  // __dirname: node.js中的一个全局变量，它指向当前执行脚本所在的目录 
+  > __dirname: node.js中的一个全局变量，它指向当前执行脚本所在的目录 
 
-  module.exports={
-    entry: __dirname + '/src/index.js',
-    output:{
-      path: __dirname + '/public', 
-    filename: 'public.js' // 输出文件的名字 
-    }
+    module.exports={
+      entry: __dirname + '/src/index.js',
+      output:{
+        path: __dirname + '/public', 
+      filename: 'public.js' // 输出文件的名字 
+      }
     }
 #####  最基本的打包就实现了  执行webpack  可以看到项目目录出现publick目录文件 在html中引入publick.j![Alt text](./屏幕快照 2017-02-27 上午10.36.10.png) 
 
